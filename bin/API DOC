@@ -1,0 +1,11 @@
+1. IMPORT DATA FROM SQL FILE TO DB
+
+2. TO GENERATE JWT TOKEN
+POST - http://localhost:8081/auth/token
+BODY - {"username":"subho@gmail.com", "password":"password"}
+TYPE - JSON
+RESPONSE - <TOKEN>
+
+3. GO TO SECURED URL 
+GET - http://localhost:8081/users/
+HEADERS - Authorization Bearer <TOKEN>
